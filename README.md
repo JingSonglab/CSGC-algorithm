@@ -55,6 +55,7 @@ Three correlation requirements (Spearman's Coef):
    ```
 
 3. ​**Validation Requirements**
+   ```plaintext
    - Experimental confirmation of TF-EMT relationships
    - Proteomic validation of autophagy-EMT crosstalk
    ```
