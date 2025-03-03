@@ -26,15 +26,20 @@ Three correlation requirements (Spearman's Coef):
    - (ssGSEA using MSigDB autophagy gene set v2022.1)
 
 ### 3. Consensus Scoring Formula
-For each candidate TF (TFi):
+## Formula Specification
+### Core Equation
+<img src="https://latex.codecogs.com/svg.image?CSGC_i&space;=&space;(FC_{i1}&space;&plus;&space;FC_{i2})&space;\times&space;\sum_{j=n}^{j_1}&space;(Coef_{i,j}&space;\times&space;Sign_{i,j})" title="CSGC Formula" width="500"/>
 
-<p align="center">
-  <img src="https://latex.codecogs.com/svg.image?CSGC(TF_i)&space;=&space;\sum_{j=1}^{n}&space;\left(&space;\frac{FC(TF_i)}{\max(FC)}&space;\times&space;Coef_j(TF_i)&space;\times&space;Sign_j&space;\right)&space;" title="Scoring Formula" />
-</p>
+### Symbol Definitions
+| Component     | Description                                  | Data Source               |
+|---------------|----------------------------------------------|---------------------------|
+| `FC_{i1}`     | Fold Change (Primary condition)              | DESeq2 (TCGA-KIRC RNA-seq)|
+| `FC_{i2}`     | Fold Change (Metastasis condition)           | DESeq2 (TCGA-KIRC RNA-seq)|
+| `Coef_{i,j}`  | Spearman correlation coefficient             | ssGSEA pathway activities |
+| `Sign_{i,j}`  | Directional enforcement operator (1/-1)      | Hypothesis validation     |
 
-**Variables:**
-- `j`: Elements of DSS1-related cascade (DSS1, autophagy, EMT)
-- `Sign_j`: Logical operator (1 if expected correlation direction observed, -1 otherwise)
+---
+
 
 ## Implementation Notes
 1. ​**Data Sources**
