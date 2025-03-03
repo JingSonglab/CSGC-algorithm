@@ -33,6 +33,8 @@ Three correlation requirements (Spearman's Coef):
 ### Symbol Definitions
 | Component     | Description                                  | Data Source               |
 |---------------|----------------------------------------------|---------------------------|
+| `i`           | Candidate genes (here EMT-TFs)               | ZEB1, ZEB2,...,TWIST1     |
+| `j`           | Activities of elements in cascade            | EMT, Autophagy, DSS1      |
 | `FC_{i1}`     | Fold Change (Primary condition)              | DESeq2 (TCGA-KIRC RNA-seq)|
 | `FC_{i2}`     | Fold Change (Metastasis condition)           | DESeq2 (TCGA-KIRC RNA-seq)|
 | `Coef_{i,j}`  | Spearman correlation coefficient             | ssGSEA pathway activities |
@@ -57,13 +59,7 @@ Three correlation requirements (Spearman's Coef):
    - Proteomic validation of autophagy-EMT crosstalk
    ```
 
-## Repository Structure
-```
-├── data/               # TCGA-KIRC input files
-├── scripts/            # DESeq2 and ssGSEA pipelines
-├── results/            # CSGC scores and correlation outputs
-└── docs/               # Methodology details
-```
+
 
 ## Citation
 Please cite this work when using the CSGC algorithm. 
