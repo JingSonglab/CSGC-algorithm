@@ -28,7 +28,7 @@ Three correlation requirements (Spearman's Coef):
 ### 3. Consensus Scoring Formula
 ## Formula Specification
 ### Core Equation
-<img src="https://latex.codecogs.com/svg.image?CSGC_i&space;=&space;(FC_{i1}&space;&plus;&space;FC_{i2})&space;\times&space;\sum_{j=n}^{j_1}&space;(Coef_{i,j}&space;\times&space;Sign_{i,j})" title="CSGC Formula" width="500"/>
+<img src="https://latex.codecogs.com/svg.image?CSGC_i&space;=&space;(FC_{i1}&space;&plus;&space;FC_{i2})&space;\times&space;\sum_{n}^{j_1}&space;(Coef_{i,j}&space;\times&space;Sign_{i,j})" title="CSGC Formula" width="500"/>
 
 ### Symbol Definitions
 | Component     | Description                                  | Data Source               |
