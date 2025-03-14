@@ -35,8 +35,9 @@ The code is the source code that runs in R software—no need for installation.
    | SNAI1   |  0.79501 | -0.042270 |  3.832284  |
    | FOXC1   | -2.17228 | -0.079888 |  0.048295  |
    | ZEB1    |  0.64954 | -0.289693 |  1.468368  |
-   `FC1` is the fold change between cancer vs. normal; `FC2` is the fold change between cancer with distant metastasis vs. cancer without distant metastasis
-   Fold change is calculated by DESeq2 (1.46.0).
+
+ `FC1` is the fold change between cancer vs. normal; `FC2` is the fold change between cancer with distant metastasis vs. cancer without distant metastasis.
+ Fold change is calculated by DESeq2 (1.46.0).
    
 ## Algorithm Workflow
 
