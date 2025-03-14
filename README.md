@@ -14,10 +14,30 @@ The ​**Consensus Scoring of Genes in Cascade (CSGC)**​ algorithm identifies 
 The code is the source code that runs in R software—no need for installation.
 
 ## Demo
-There is a "CSGCrun.Rdata" file that could be directly loaded into the R environment using `load(D:/your_directory/CSGCrun.Rdata)`.
+1. There is a "CSGC_run.Rdata" file that could be directly loaded into the R environment using `load("D:/your_path_to_Rdata/CSGC_run.Rdata")`.
 
-Then, run
+   Then, as all required demo data were loaded with `CSGC_run.Rdata`, you can simply run:
+   `CSGCscore = CSGCalgorithm(DEdata, DEdata2, corrdata, signdata)
+   CSGCscore`
 
+2. There is a code file `CSGC.R` with the R function of the CSGC algorithm (namely, `CSGCalgorithm`), as are the descriptions of how to run the script.
+
+3. Expected output:
+   | gene    |       FC1 |        FC2 | CSGCscore  |
+   |---------|----------|-----------|------------|
+   | TCF3    |  0.51446 |  0.204785 |  3.246203  |
+   | CTNNB1  | -0.16962 | -0.248379 | -0.083727  |
+   | ZEB2    |  0.66921 | -0.043360 |  2.017213  |
+   | FOXC2   |  1.22595 | -0.120247 |  2.944317  |
+   | KLF8    |  1.19419 | -0.081593 |  0.616272  |
+   | SNAI2   | -0.11891 |  0.017796 |  1.904771  |
+   | TWIST1  |  1.03193 |  0.431632 |  7.082633  |
+   | SNAI1   |  0.79501 | -0.042270 |  3.832284  |
+   | FOXC1   | -2.17228 | -0.079888 |  0.048295  |
+   | ZEB1    |  0.64954 | -0.289693 |  1.468368  |
+   `FC1` is the fold change between cancer vs. normal; `FC2` is the fold change between cancer with distant metastasis vs. cancer without distant metastasis
+   Fold change is calculated by DESeq2 (1.46.0).
+   
 ## Algorithm Workflow
 
 ### 1. Candidate Transcription Factors (TFs)
