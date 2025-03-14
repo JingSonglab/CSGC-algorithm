@@ -1,5 +1,5 @@
 # CSGC-algorithm
-[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/JingSonglab/CSGC-algorithm/LICENSE "OVERVIEW MIT license")
+[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://github.com/JingSonglab/CSGC-algorithm/blob/main/LICENSE "OVERVIEW MIT license")
 ## Overview
 The ​**Consensus Scoring of Genes in Cascade (CSGC)**​ algorithm identifies candidate genes involved in the DSS1-mediated autophagy-metastasis cascade. This document outlines the computational framework and scoring logic.
 
