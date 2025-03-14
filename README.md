@@ -3,6 +3,21 @@
 ## Overview
 The ​**Consensus Scoring of Genes in Cascade (CSGC)**​ algorithm identifies candidate genes involved in the DSS1-mediated autophagy-metastasis cascade. This document outlines the computational framework and scoring logic.
 
+## Platform and Dependencies
+   ```plaintext
+   Operating System: No limit of operating system. The code was run on the R platform (Windows 10 22H2 19045.5608)
+   R software: 4.2.3 (base packages, https://www.r-project.org/)
+   Non-standard hardware: Not required
+   ```
+
+## Installation
+The code is the source code that runs in R software—no need for installation.
+
+## Demo
+There is a "CSGCrun.Rdata" file that could be directly loaded into the R environment using `load(D:/your_directory/CSGCrun.Rdata)`.
+
+Then, run
+
 ## Algorithm Workflow
 
 ### 1. Candidate Transcription Factors (TFs)
