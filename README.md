@@ -17,12 +17,14 @@ The code is the source code that runs in R software—no need for installation.
 1. There is a "CSGC_run.Rdata" file that could be directly loaded into the R environment using `load("D:/your_path_to_Rdata/CSGC_run.Rdata")`.
 
    Then, as all required demo data were loaded with `CSGC_run.Rdata`, you can simply run:
+
    `CSGCscore = CSGCalgorithm(DEdata, DEdata2, corrdata, signdata)`.
+
    `CSGCscore`
 
-2. There is a code file `CSGC.R` with the R function of the CSGC algorithm (namely, `CSGCalgorithm`), as are the descriptions of how to run the script.
+3. There is a code file `CSGC.R` with the R function of the CSGC algorithm (namely, `CSGCalgorithm`), as are the descriptions of how to run the script.
 
-3. Expected output:
+4. Expected output:
    | gene    |       FC1 |        FC2 | CSGCscore  |
    |---------|----------|-----------|------------|
    | TCF3    |  0.51446 |  0.204785 |  3.246203  |
