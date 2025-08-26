@@ -101,4 +101,4 @@ Three correlation requirements (Spearman's Coef):
 
 
 ## Citation
-Please cite this work when using the CSGC algorithm. 
+Chen X., Liu Q., Wu J., Zhou P., Zhao M., Song J. DSS1 inhibits autophagy to activate epithelial-mesenchymal transition in a pro-metastatic niche of renal cell carcinoma. Nat Commun 16, 6769 (2025). https://doi.org/10.1038/s41467-025-62135-9
